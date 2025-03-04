@@ -301,3 +301,15 @@ ggplot(samples_df, aes(sample = mean_zombies_killed)) +
   stat_qq_line(color = "red") +
   labs(title = "Q-Q Plot: Sampling Distribution of Mean Zombies Killed")
 ```
+
+## CHALLENGES FACED: 
+1. One of the biggest challenges that I had here was on my second exercise, making my grid. I kept trying to use the patchwork package, and giving R the instruction of displaying a 3x2 grid. However, it became too complicated. I overcame this challenge after I learned about another package (gridExtra) that I could use, and that could follow my command without forcing me to create another empty plot. After noticing that this package was easier to manage for my data, I switched and it all worked!
+
+2. I kept making a lot of typos, and that made my homework even longer than expected. I am considering using less text/words for the names I assign to certain factors/variables because sometimes those can turn out too long, and make everything even more confusing and harder to keep track. 
+
+3. For some reason, in this homework I kept getting an error saying that I didn't have my CRAN mirror in R/my project? It was very weird and although I understand what its purpose is a little more, I never got to figure out why I suddently started having that problem. I did some research and found out that I needed to display it in my project (choosing the URL that works in the US), and that solved it all. 
+
+4. It was also hard to knitt my project using the theme that Prof. Schmitt mentioned in the homework instructions. I took at least 2 more hours for that (when I usually take no more than 15 min), and then after a lot of research and trial/error, I found out that sometimes such themes only work on older R versions. Therefore, that in order to have it activate in my laptop, I needed to "degrade" my R Studio version. However, it was not 100% guaranteed that my problem was going to be solved. I chose to use another theme considering this situation. 
+
+5. In exercise 4, when doing the Q-Q Plot, I had a lot of issues too because my package wasn't running properly. I found out that I was running the function qqplot, instead of the one that I HAD to use with the (car) package: qqPlot. 
+I also kept forgetting to run the "library(car)" package first , which lead me to (again), spend a huge amount of time trying to figure out what to do to fix it. 
